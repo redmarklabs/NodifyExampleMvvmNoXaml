@@ -1,4 +1,4 @@
-# Nodify Minimal Example MVVM (No Xaml)
+# Nodify Minimal Example MVVM (No XAML)
 A minimal example of getting started with nodify without the use of XAML.
 
 `ALT`+`LeftClick` to delete connections.
