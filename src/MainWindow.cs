@@ -32,27 +32,13 @@ namespace NodifyTestWpf
 
             var (smallGrid, largeGrid, background) = CreateGridBrushes(editor);
 
-            var root = new Grid
-            {
-                Background = background,
-                RowDefinitions =
-                {
-                    new RowDefinition { MaxHeight = 40 },
-                    new RowDefinition()
-                }
-            };
+            var root = new Grid { Background = background };
             editor.Background = smallGrid;
 
-            var gridLayer = new Grid
-            {
-                Background = largeGrid
-            };
+            var gridLayer = new Grid { Background = largeGrid };
             Panel.SetZIndex(gridLayer, -2);
 
-            Grid.SetRow(gridLayer, 1);
             root.Children.Add(gridLayer);
-
-            Grid.SetRow(editor, 1);
             root.Children.Add(editor);
 
             Content = root;
