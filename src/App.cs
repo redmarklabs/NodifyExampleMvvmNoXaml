@@ -4,9 +4,6 @@ using System.Windows;
 
 namespace NodifyTestWpf
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
         [STAThread]
@@ -17,5 +14,4 @@ namespace NodifyTestWpf
             app.Run(window);
         }
     }
-
 }
